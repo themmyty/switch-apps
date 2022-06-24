@@ -1,0 +1,166 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.back-container{
+    background-image: url(../assets/images/switchImg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+
+.float-container {
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.float-child {
+    padding: 20px;
+}
+ .blueo{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    
+ }  
+    
+
+.blue{
+    display: flex;
+   justify-content:flex-start;
+  border-radius: 5px;
+  background-color: white;
+   box-shadow:11px 12px 11px 12px rgba(100, 120, 126,113);
+   display: inline;
+   height: 400px;
+   width: 300px;
+   padding-bottom: 100px;
+   
+}
+.logopng{
+    margin-top: 70px;
+    margin-right: 300px;
+}
+.rowitems{
+    display: flex;
+}
+
+.form-body{
+    margin-top: 40px;
+    
+}
+.rowfield{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 16rem;
+    height: 34px;
+    margin: auto;
+}
+.emaill {
+    margin: 10px auto 0;
+}
+
+.emaill input {
+    width: 220px;
+    height: 20px;
+    border-radius: 4px;
+    border-width: thin;
+}
+
+
+
+.username input{
+    width: 100px;  
+    height: 15px;
+    border-radius: 4px;
+    border-width: thin;
+}
+.lastname input{
+    width: 100px; 
+    height: 15px;
+    border-radius: 4px;
+    border-width: thin;
+}
+.confirm-password{
+    margin: 15px auto 0; 
+}
+
+.confirm-password input{
+    width: 220px;
+    height: 20px;
+    border-radius: 4px;
+    border-width: thin;
+}
+.username{
+    margin-right: 10px;
+}
+.text1{
+    width: 410px;
+    text-align: left;
+   color: grey; 
+   margin-top: 20px;
+}
+.text1 h4{
+    color: #000;
+    margin: 0;
+}
+.text1 h6{
+    margin: 0;
+}
+
+.agree{
+    width: 200px;
+    text-align: left;
+   color: grey;
+   margin-left: 50px;
+}
+.member1{
+    width: 300px;
+    text-align: left;
+   color: grey;
+   margin-left: 50px; 
+}
+span{
+    color: #1899D7;
+}
+.float-child.float1{
+    margin-right: 50px;
+}
+.rowitems img{
+    margin-top: 12px;
+}
+.nig {
+    margin: 15px auto 0;
+}
+
+.nig input {
+    width: 220px;
+    height: 20px;
+    border-radius: 4px;
+    border-width: thin;
+}
+.pasword{
+    margin: 15px auto 0;
+}
+.pasword input{
+    width: 220px;
+    height: 20px;
+    border-radius: 4px;
+    border-width: thin;
+    margin-left: 15px;
+}
+.nig img{
+    position: absolute;
+    right: 397px;
+   margin-top: 6px;
+}
+.pasword img{
+    right: 22px;
+    position: relative;
+    top: 1px;
+}
+

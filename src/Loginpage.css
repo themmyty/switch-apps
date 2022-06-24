@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.back-container{
+    background-image: url(../src/assets/images/switchImg.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+}
+ 
+
+.main{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 90px 0 90px 0;
+    
+   
+}
+.submain{
+   display: flex;
+   justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+   box-shadow:1px 1px 1px 1px rgba(100, 120, 126,113);
+   display: inline;
+   height: 400px;
+   width: 300px;
+}
+
+.logo{
+   position: absolute;
+   left: 350px;
+   top: 150;
+}
+.getstarted{
+   margin-right: 20px; 
+}
+.radio{
+    margin-right: 100px;
+}
+.textt{
+   
+    width: 250px;
+    text-align: left;
+   color: grey;
+   margin-left: 35px;
+   
+}
+.textt h6{
+    margin: 0;
+}
+.textone h6{
+    margin: 0;
+}
+
+.textone{
+ 
+  width: 250px;
+  text-align: left;
+  color: grey;
+  margin-left: 35px;
+  
+   
+}
+.btnn{
+    margin-top: 53px;
+    
+}
+button{
+    
+    color: #fff;
+    background-color:#1899D7 ;
+    border: none;
+    font-size: 12;
+    border-radius:10px;
+    width: 13rem;
+    height: 34px;
+    cursor: pointer;
+
+
+}
+.radio{
+    margin-top: 30px;
+}
