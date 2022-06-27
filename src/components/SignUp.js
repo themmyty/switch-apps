@@ -20,10 +20,10 @@ function SignUp(props) {
               <div className="email">
                   <input className="form__input" type="text" id="firstName" placeholder="Email"/>
               </div>
-              <h6>Forgot Password?</h6>
+              <h6 onClick={() => navigate("/ForgotPassword")}>Forgot Password?</h6>
               <div className="password">
                 
-                  <input  type="text" name="" id="lastName"  className="form__input"placeholder="password" width={200}/>
+                  <input  type="text" name="" id="lastName"  className="form__input"placeholder="password"/>
               </div>
               
             </div>  
@@ -34,7 +34,7 @@ function SignUp(props) {
             >Continue</button>
             </div>
             <div className='member1'>
-            <h6>Don’t have an account?<span>Sign up</span></h6>
+            <h6>Don’t have an account?<span onClick={() => navigate("/CreateAccount")}>Sign up</span></h6>
             </div>
             </div> 
         </div>

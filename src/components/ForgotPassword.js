@@ -22,10 +22,10 @@ function ForgotPassword(props) {
               </div>
             </div>  
             </div> 
-            <div className='btn'> 
+            <div className='btn1'> 
             <button onClick={() => navigate("/ForgotPassword")}
             >Continue</button>
-            <h6>Don’t have an account?<span>Sign up</span></h6>
+            <h6>Don’t have an account?<span onClick={() => navigate("/SignUp")}>Sign up</span></h6>
             </div> 
             </div> 
         </div>

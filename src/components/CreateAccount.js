@@ -13,94 +13,77 @@ function CreateAccount(props) {
     return (
 
         
-        <div className='back-container'>
-            <div class="float-container">
-
-                <div class="float-child float1">
-                    <div class="green">
-                        <div className='logopng'>
-                            <img src={logo}width={120}height={60}/>
-                        </div>
-
-                        <div className='rowitems'>
-                            <div className='imageicon'>
-                                <img src={icon} width={24}height={36}/>
-                            </div>
-                            <div className='text1'>
-                                <h4>Get started quickly</h4>
-                                <h6>Integrate with developer-friendly APIs or choose low-code or pre-built solutions.</h6>
-                            </div>
-                        </div>
-                        <div className='rowitems'>
-                            <img src={icon} width={24}height={36}/>
-                            <div className='text1'>
-                            <h4>Support any business model</h4>
-                            <h6>E-commerce, subscriptions, SaaS platforms, marketplaces, and more—all within a unified platform.</h6>
-                            </div>
-                        </div>
-                        <div className='rowitems'>
-                            <img src={icon} width={24}height={36}/>
-                            <div className='text1'>
-                            <h4>Get started quickly</h4>
-                            <h6>Switch App is trusted by ambitious startups and enterprises of every size.</h6>
-                            </div>
-                        </div>
+  <div className='body-container'>     
+    <div className='signup-container'>
+        <div class="left-section">
+            <div class="logo-sign">
+            <img src={logo}/>
+            </div>
+            <div class="text-section">
+                <div class="text-1">
+                    <img src={icon} style={{width:40,height:40}}/>
+                    <div class="cap-1">
+                        <h3>Get started quickly</h3>
+                        <p>Integrate with developer-friendly APIs or choose low-code or pre-built solutions.</p>
                     </div>
                 </div>
 
-                <div class="float-child">
-                    <div className='blueo'>
-                        <div class="blue">
-                            <h3>Create your Merchant account</h3>
-                        <div className="form">
-                <div className="form-body">
-                    <div className='rowfield'>
-                    <div className="username">
-                        <input className="form__input" type="text" id="firstName" placeholder="First Name"/>
+                <div class="text-2">
+                    <img src={icon}style={{width:40,height:40}}/>
+                    <div class="cap-2">
+                        <h3>Support any business model</h3>
+                        <p>E-commerce, subscriptions, SaaS platforms, marketplaces, and more all within a unified platform.</p>
                     </div>
-                    <div className="lastname">
-                        
-                        <input  type="text" name="" id="lastName"  className="form__input"placeholder="LastName"/>
-                    </div>
-                    </div>
-                    <div className="emaill" >
-                        
-                        <input  type="email" id="email" className="form__input" placeholder="Email"/>
-                    </div>
-                  
-                    <div className="confirm-password">
-
-                        <input className="form__input" type="password" id="confirmPassword" placeholder="Company Name"/>
-                    </div>
-                    <div className="nig">
-                    <img src={nig}width={20}height={12}/>
-                        <input className="form__input" type="password"  id="password" placeholder="Nigeria"/>
-                        
-                    </div>
-                    <div className="pasword">
-
-                        <input className="form__input" type="password" id="confirmPassword" placeholder="Password"/>
-                        <img src={eye}width={15}height={14}/>
-                    </div>
-                    <div className='agree'>
-                    <h6>I agree that Switch App may contact me at the email address or phone number above.</h6>
-                    </div>
-                        </div>
-                            <button onClick={() => navigate("/SignUp")}
-                            style={{width:250,height:39}}
-                            className='btn'>Create merchant Account</button>
-                            <div className='member1'>
-                            <h6>Already have an account?<span>Sign in</span></h6>
-                            </div>
-                        </div>
-                        </div>
-                        
-                    </div>
-                
                 </div>
 
+                <div class="text-3">
+                    <img src={icon}style={{width:40,height:40}}/>
+                    <div class="cap-3">
+                        <h3>Join millions of businesses</h3>
+                        <p>Switch App is trusted by ambitious startups and enterprises of every size.</p>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+
+
+        <div class="right-section">
+            <div class="container">
+                    <h2>Create your Merchant account</h2>
+                <div class="form-section">
+                    <div action="#">
+                        <div id="fill">
+                            <input type="text" id="fname" name="fname" placeholder="First Name" required=""/>
+                            <input type="text" id="lname" name="lname" placeholder="Last Name" required=""/>
+                        </div>
+                        <input type="email" id="email" name="email" placeholder="Email" required=""/>
+                        <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
+                        <div className='nig'> 
+                        <img src={nig}/>
+                         <input type="text" id="cname" name="cname" placeholder="Nigeria" required=""/>
+                         </div>
+                        <input type="password" id="password" name="password" placeholder="Password" maxlength="10" minlength="2" required="!@#$%"/>
+                        <div id="check">
+                            <input type="checkbox" value="checkbox"/>
+                            <p>I agree that Switch App may contact me at the email address or phone number above.</p>
+                        </div>
+                        <button type="submit" value="Login">Create Merchant Account</button>
+                    </div>
+                    <div className="sign-up">
+                        <p>Already have an account? <a href="./index.html">Sign in</a></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+     </div>
+     <div className='footerr'>
+        <p>© Switch App</p>
+        <p href="#">Privacy &amp; terms</p>
+    </div>
+    </div> 
+
     );
 }
 

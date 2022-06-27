@@ -1,85 +1,105 @@
-body{
+*{
+    box-sizing:border-box;
+    padding: 0;
     margin: 0;
-    overflow: hidden;
+    text-decoration: none;
+
 }
-.back-container{
+
+body{
     background-image: url(../src/assets/images/switchImg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat; 
+    height: 100vh;
+    font-family: 'Catamaran', sans-serif;
 }
- 
-
 .main{
-    text-align: center;
-    justify-content: center;
     display: flex;
-    padding: 90px 0 90px 0;
+    flex-direction: column;
+    margin: auto;
     
-   
+
 }
-.submain{
-   display: flex;
-   justify-content: center;
-  border-radius: 10px;
-  background-color: white;
-   box-shadow:1px 1px 1px 1px rgba(100, 120, 126,113);
-   display: inline;
-   height: 400px;
-   width: 300px;
+.logo-login {
+    margin-top: 100px;
+    justify-content: center;
+    width: 76%;
+    display: flex;
+    
 }
 
-.logo{
-   position: absolute;
-   left: 350px;
-   top: 150;
+.container{
+    padding: 50px;
+    box-shadow: 0px 3px 6px #0000000D;
+    border: 1px solid #70707040;
+    border-radius: 10px;
+    width: 452px;
+    margin: auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
 }
-.getstarted{
-   margin-right: 20px; 
+.radio-selection{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
 }
-.radio{
-    margin-right: 100px;
+.psac{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin: 0 0 20px 0;
+    font-size: 14px;
 }
-.textt{
-   
-    width: 250px;
+.macc{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+    margin-bottom: 33px;
+}
+
+.container h4{
+
+    margin-bottom: 43px;
     text-align: left;
-   color: grey;
-   margin-left: 35px;
+    font-size: 21px;
+
+}
+.psac-cap,.macc-cap h3{
+    text-align: left;
+    font-size: 16px;
    
 }
-.textt h6{
-    margin: 0;
+.macc-cap, .psac-cap p{
+    text-align: left;
+    font-size: 14px;
 }
-.textone h6{
-    margin: 0;
+.btnn button{
+    background: #1899D7 0% 0% no-repeat padding-box;
+    border: 1px solid #B2B2B280;
+    border-radius: 7px;
+    width: 155px;
+    height: 45px;
+    float: left;
+    color: #fff
 }
 
-.textone{
+@media screen and (max-width: 420px) {
+    body{
+        background-image: none;
+    }
+    .container{
+        width: 389px;
+    }
+    
+}
+
+.footer{
+    display: flex;
+    margin-top: 90px;
+    justify-content: center;
+    gap: 20px;
+    font-size: 14px;
+}
  
-  width: 250px;
-  text-align: left;
-  color: grey;
-  margin-left: 35px;
-  
-   
-}
-.btnn{
-    margin-top: 53px;
-    
-}
-button{
-    
-    color: #fff;
-    background-color:#1899D7 ;
-    border: none;
-    font-size: 12;
-    border-radius:10px;
-    width: 13rem;
-    height: 34px;
-    cursor: pointer;
 
-
-}
-.radio{
-    margin-top: 30px;
-}
