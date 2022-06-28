@@ -22,6 +22,7 @@ const navigate = useNavigate();
         </div>
     <div className='login-container'>
         <div class="left-section">
+        
             <div class="login-logo">
                 <img src={logo}/>
             </div>

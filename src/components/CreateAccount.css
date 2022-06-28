@@ -206,6 +206,19 @@ button{
     body{
         background-image: none;
     }
+    .login-container{
+        display: block;
+        flex-wrap: wrap;
+    }
+    .left-section{
+       display: none;
+    }
+    .right-section{
+        width: 100%;
+    }
+  
+        
+
     
 
     
