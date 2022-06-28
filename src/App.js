@@ -1,5 +1,5 @@
 import './App.css';
-import Loginpage from './Loginpage';
+import Loginpage from './components/Loginpage';
 import CreateAccount from './components/CreateAccount';
 import SignUp from './components/SignUp';
 import ForgotPassword from './components/ForgotPassword'

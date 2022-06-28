@@ -1,7 +1,7 @@
 import React from 'react';
 import './Loginpage.css';
 import { useState } from "react";
-import logo from '../src/assets/images/logo.png'
+import logo from '../assets/images/Switchlogo.png'
 import { useNavigate} from 'react-router-dom';
 
 
@@ -21,7 +21,7 @@ function Loginpage(props) {
         <div className='main'>
           
           <div className='logo-login'>
-            <img src={logo} alt='ol' width={164}height={47} />
+            <img src={logo} alt='ol'  />
           </div>
           <div className='container'>
   

@@ -7,7 +7,7 @@
 }
 
 body{
-    background-image: url(../src/assets/images/switchImg.png);
+    background-image: url(../assets/images/switchImg.png);
     background-size: 100% 100%;
     background-repeat: no-repeat; 
     height: 100vh;
@@ -17,14 +17,18 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 402px;
     
 
 }
 .logo-login {
     margin-top: 100px;
     justify-content: center;
-    width: 76%;
+    width: 142px;
+    height: auto;
+    float: left;
     display: flex;
+    margin-bottom: 18px;
     
 }
 

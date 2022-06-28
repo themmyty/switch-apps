@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate} from 'react-router-dom';
-import logo from '../assets/images/logo.png'
+import logo from '../assets/images/Switchlogo.png'
 import './Forgotpassword.css';
 
 function ForgotPassword(props) {
@@ -8,28 +8,24 @@ function ForgotPassword(props) {
     const navigate = useNavigate();
 
     return (
-        <div className='back-container'>
-                 <div className='logo'>
-            <img src={logo} width={150}height={50} alt='hi'/> 
-            </div>
-        <div className='main-t'>
-          <div className='submain-t'>
-           <h5>Forgot Password</h5>
-           <div className="form">
-          <div className="form-body">
-              <div className="email">
-                  <input className="form__input" type="text" id="firstName" placeholder="Email"/>
-              </div>
-            </div>  
+        <div className='forgotp-container'>
+                 <div className='logo-forgott'>
+                    <img src={logo} width={164}height='auto' alt='hi'/> 
+                 </div>
+            <div className='main-f'>
+                    <h5>Forgot Password</h5>
+                <div className="forrm">
+                        <input className="form__input" type="text" id="firstName" placeholder="Email"/>
+                    <div className='btn-forgotp'> 
+                         <button onClick={() => navigate("/ForgotPassword")} >Continue</button>
+                    </div>
+                             <div className='dhac'>
+                                <p>Don’t have an account?<span onClick={() => navigate("/CreateAccount")}>  Sign up</span></p>
+                            </div>
+                </div>
             </div> 
-            <div className='btn1'> 
-            <button onClick={() => navigate("/ForgotPassword")}
-            >Continue</button>
-            <h6>Don’t have an account?<span onClick={() => navigate("/SignUp")}>Sign up</span></h6>
-            </div> 
-            </div> 
-        </div>
-        </div>
+        </div> 
+       
     );
 }
 
