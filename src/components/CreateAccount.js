@@ -75,7 +75,7 @@ const navigate = useNavigate();
 		            <input type="text" id="cname" name="cname" placeholder="Nigeria"required=""/>
                     <div className='eyepassword'>
 		            <input type="password" id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
-                        <img src={eye}/>
+                       
                     </div>
                     <div id="check">
                         <input type="checkbox" value="checkbox"/>
