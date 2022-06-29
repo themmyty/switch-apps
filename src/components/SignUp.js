@@ -30,6 +30,10 @@ function SignUp(props) {
                     </div>
                 </div> 
             </div>
+            <div className='footer-signup'>
+        <p>© Switch App</p>
+        <p href="#">Privacy &amp; terms</p>
+    </div>
         </div>
     );
 }

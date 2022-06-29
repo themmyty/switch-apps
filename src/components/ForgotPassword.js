@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate} from 'react-router-dom';
+import back from '../assets/images/bak.png'
 import logo from '../assets/images/Switchlogo.png'
 import './Forgotpassword.css';
 
@@ -8,6 +9,11 @@ function ForgotPassword(props) {
     const navigate = useNavigate();
 
     return (
+        <div className='forgotpmain'>
+            <div className='backk'onClick={() => navigate("/SignUp")}>
+            <img src={back} />
+            <p>Back</p>
+        </div>
         <div className='forgotp-container'>
                  <div className='logo-forgott'>
                     <img src={logo} width={164}height='auto' alt='hi'/> 
@@ -25,7 +31,11 @@ function ForgotPassword(props) {
                 </div>
             </div> 
         </div> 
-       
+        <div className='footer-forgot'>
+        <p>© Switch App</p>
+        <p href="#">Privacy &amp; terms</p>
+    </div>
+    </div> 
     );
 }
 

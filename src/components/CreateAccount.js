@@ -16,13 +16,12 @@ const navigate = useNavigate();
 
         
 <div className='body-container'> 
-        <div className='back'>
-            <img src={back} onClick={() => navigate("/")}/>
+<div className='back'onClick={() => navigate("/")}>
+            <img src={back} />
             <p>Back</p>
         </div>
     <div className='login-container'>
         <div class="left-section">
-        
             <div class="login-logo">
                 <img src={logo}/>
             </div>
@@ -63,7 +62,7 @@ const navigate = useNavigate();
 
 
         <div class="right-section">
-	        <div class="container">
+	        <div class="containerr">
 	            <h2>Create your Merchant account</h2>
 	            <div class="form-section">
                     <div className='firstandlast'>
