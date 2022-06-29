@@ -16,6 +16,15 @@
     display: flex;
     margin-bottom: 18px;
 }
+@keyframes slide{
+    from{
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+    to{
+        margin-right:0px;
+    }
+}
 
 .main-c{
         padding: 50px;
@@ -25,6 +34,8 @@
         width: 484px;
         margin: auto;
         background: #FFFFFF 0% 0% no-repeat padding-box;
+        animation-name: slide;
+        animation-duration: 0.9s;
     }
 .main-c h5{
     text-align: left;
