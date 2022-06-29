@@ -227,9 +227,7 @@ button{
         flex-direction: column;
     }
     .left-section{
-       width: 90%;
-       animation-name: none!important;
-       transition: none;
+      display: none;
     }
     .right-section{
         width: 100%;
