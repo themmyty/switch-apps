@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate} from 'react-router-dom';
 import './CreateAccount.css'
+import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai'
 import logo from '../assets/images/Switchlogo.png'
 import icon from '../assets/images/icon.png'
 import nig from '../assets/images/nig.png'
-import eye from '../assets/images/eye.png'
 import back from '../assets/images/bak.png'
 
 
@@ -12,8 +12,13 @@ function CreateAccount(props) {
 
 const navigate = useNavigate();
 
-    return (
+const [state,setstate]=useState(false);
 
+const togglebtn =()=>{
+    setstate(prevstate =>!prevstate);
+}
+
+    return (
         
 <div className='body-container'> 
 <div className='back'onClick={() => navigate("/")}>
@@ -73,8 +78,11 @@ const navigate = useNavigate();
 		            <input type="text" id="cname" name="cname" placeholder="CompanyName" required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="Nigeria"required=""/>
                     <div className='eyepassword'>
-		            <input type="password" id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
-                       
+		            <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
+                    <div className='eye' onClick={togglebtn}>
+                        {state?<AiFillEye color='gray'/>:
+                         <AiFillEyeInvisible  color='gray'/>}
+                    </div>
                     </div>
                     <div id="check">
                         <input type="checkbox" value="checkbox"/>

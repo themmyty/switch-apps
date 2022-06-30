@@ -43,15 +43,16 @@
     width: 40px;
     height: auto;
 }
-/*.eyepassword img{
-    width: 15px;
-    height: auto;
-    bottom: 184px;
+.eyepassword {
+   display: grid;
+   position: relative;
+
+}
+.eye{
     position: absolute;
-    right: 109px;
-}*/
-
-
+    left: 270px;
+    top: 12px;
+}
 .left-section h3{
     font-size: 18px;
     font-weight: 600;
