@@ -96,10 +96,12 @@ body{
         width: 389px;
     }
     .psac input{
-
+        width: 40px;
+        height: 14px; 
     }
     .macc input{
-        
+        width: 40px;
+    height: 14px;
     }
     
 }
