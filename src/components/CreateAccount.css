@@ -53,6 +53,26 @@
     left: 270px;
     top: 12px;
 }
+
+.countries{
+    position: relative;
+}
+
+.countries img{
+    position: absolute;
+    top: 12px;
+    left: 25px;
+}
+.countries p{
+    position: absolute;
+    left: 55px;
+    top: 10px;
+}
+.dropdownicon{
+    position: absolute;
+    left: 271px;
+    top: 12px;
+}
 .left-section h3{
     font-size: 18px;
     font-weight: 600;

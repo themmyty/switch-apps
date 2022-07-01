@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate} from 'react-router-dom';
 import './CreateAccount.css'
-import {AiFillEyeInvisible,AiFillEye} from 'react-icons/ai'
+import {AiFillEyeInvisible,AiFillEye,} from 'react-icons/ai'
+import{IoMdArrowDropdown} from 'react-icons/io'
 import logo from '../assets/images/Switchlogo.png'
 import icon from '../assets/images/icon.png'
 import nig from '../assets/images/nig.png'
@@ -76,13 +77,20 @@ const togglebtn =()=>{
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="CompanyName" required=""/>
-		            <input type="text" id="cname" name="cname" placeholder="Nigeria"required=""/>
-                    <div className='eyepassword'>
-		            <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
-                    <div className='eye' onClick={togglebtn}>
-                        {state?<AiFillEye color='gray'/>:
-                         <AiFillEyeInvisible  color='gray'/>}
+                    <div className='countries'>
+                        <img src={nig} style={{ width: 20,height: 'auto'}}/>
+                        <p>Nigeria</p>
+                        <div className='dropdownicon'>
+                             <IoMdArrowDropdown />
+                        </div>
+		                 <input type="text" id="cname" name="cname"required=""/>
                     </div>
+                    <div className='eyepassword'>
+		                 <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
+                         <div className='eye' onClick={togglebtn}>
+                             {state?<AiFillEye color='gray'/>:
+                             <AiFillEyeInvisible  color='gray'/>}
+                         </div>
                     </div>
                     <div id="check">
                         <input type="checkbox" value="checkbox"/>
