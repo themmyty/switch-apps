@@ -23,7 +23,7 @@ function SignUp(props) {
                         <input  type="text" name="" id="password"  className="form__input"placeholder="Password"/>
                     
                     <div className='btnsignup'>
-                    <button onClick={() => navigate("/ForgotPassword")}>Continue</button>
+                    <button onClick={() => navigate("/Homepage")}>Continue</button>
                     </div>
                     <div className='member1'>
                     <p>Don't have an account?<span onClick={() => navigate("/CreateAccount")}>  Sign up</span></p>
