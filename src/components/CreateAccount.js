@@ -100,18 +100,18 @@ const togglebtn =()=>{
 	            <h2>Create your Merchant account</h2>
 	            <div class="form-section">
                     <div className='firstandlast'>
-                        <input type="text" id="fname" name="fname" placeholder="First Name" 		required=""/>
-		                <input type="text" id="lname" name="lname" placeholder="Last Name" 		required=""/>
+                        <input type="text" id="fname" name="fname" placeholder="First Name" required=""/>
+		                <input type="text" id="lname" name="lname" placeholder="Last Name" 	required=""/>
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
-		            <input type="text" id="cname" name="cname" placeholder="CompanyName" required=""/>
+		            <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
                     <div className='selection'onClick={e=>{
                             setdropdownvisible(!dropdownvisible)
                          }}>
                                 <div className='uion'>
-                                {selecteditem !== null ? itemlist[selecteditem].dname:"Country" }
+                                {selecteditem !== null ? itemlist[selecteditem ].dname:" Select Country"}
                                 </div>
-                                <IoMdArrowDropdown style={{position:'absolute',right:15,top:15,}}/>
+                                <IoMdArrowDropdown style={{position:'absolute',right:15,top:10,}}/>
                               
                          </div>
                         

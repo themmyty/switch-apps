@@ -56,12 +56,22 @@
 .eye{
     position: absolute;
     left: 270px;
-    top: 12px;
+    top: 10px;
 }
 
 .uion{
-   text-align: left;
-   padding: 0px 18px;
+    text-align: left;
+    padding: 0px 18px;
+    font-size: 14px;
+    
+}
+.uion::before{
+    content: '';
+    color: gray;
+}
+.uion::after{
+    content: '';
+    color: black;
 }
 
 .item-holder{
@@ -79,7 +89,8 @@
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
     padding: 10px 10px;
     cursor: pointer;
-   margin-bottom: 30px;  
+    height: 34px;
+    margin-bottom: 30px;  
     position: relative;
 }
 .display{
@@ -97,7 +108,7 @@
 
 .left-section p{
     font-size: 14px;
-    font-weight: 400;
+
     opacity: 0.75;
     text-align: left;
     
