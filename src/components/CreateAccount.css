@@ -58,7 +58,7 @@
 }
 .eye{
     position: absolute;
-    left: 270px;
+    left: 415px;
     top: 10px;
 }
 
@@ -151,6 +151,7 @@
 .containerr h2{
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: left;
 }
 
 .containerr p{
@@ -176,7 +177,7 @@
     padding: 50px;
     border: 1px solid rgba(112, 112, 112, 0.25);
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.05);
-    width: 402px;
+    width: 552px;
     height: auto;
     
    
