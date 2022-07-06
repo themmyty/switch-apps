@@ -104,8 +104,8 @@ span{
 @media screen and (max-width: 420px) {
     
     .main-c{
-        width: 393px;
-        margin-left: 14px;
+        width: 440px;
+        margin-left: 20px;
         margin-right: 5px; 
     }
     .footer-signup{
