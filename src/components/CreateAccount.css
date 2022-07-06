@@ -56,10 +56,11 @@
    position: relative;
 
 }
-.eye{
+.eye {
     position: absolute;
     left: 415px;
-    top: 10px;
+    top: 12px;
+    
 }
 
 .display{

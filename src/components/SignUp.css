@@ -104,8 +104,9 @@ span{
 @media screen and (max-width: 414px) {
     
     .main-c{
-        width: 378px;
+        width: 358px;
         margin: 0 16px 0;
+        padding: 25px;
     }
     
     .footer-signup{
@@ -113,4 +114,7 @@ span{
     align-items: center;
     margin-right: 39px;
 }
+    .signup-container img{
+        margin-left: 14px;
+    }
 }
