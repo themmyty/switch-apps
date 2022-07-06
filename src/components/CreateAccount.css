@@ -14,7 +14,8 @@
    align-items: center;
    position: relative;
    top: 35px;
-   left: 85px;
+   margin-left: 85px;
+   
     
 }
 .itemstyle{
@@ -26,6 +27,7 @@
 .login-container{
     display: flex;
     margin: auto;  
+    align-content: center;
 }
 
 .login-logo img{
