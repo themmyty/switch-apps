@@ -239,15 +239,17 @@ button{
         background-image: none;
     }
     .login-container{
-        display: block;
-        flex-wrap: wrap;
-        flex-direction: column;
+        width: 449px;
+        margin: 90px 16px 0;
     }
     .left-section{
       display: none;
     }
     .right-section{
         width: 100%;
+    }
+    .back{
+        display: none;
     }
   
         
