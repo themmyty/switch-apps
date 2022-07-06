@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate} from 'react-router-dom';
+import CountryDropdown from 'country-dropdown-with-flags-for-react';  
 import './CreateAccount.css'
 import {AiFillEyeInvisible,AiFillEye,} from 'react-icons/ai'
 import{IoMdArrowDropdown} from 'react-icons/io'
@@ -80,7 +81,9 @@ const togglebtn =()=>{
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
-
+                    <div>
+                       
+                    </div>
                     <div className='eyepassword'>
 		                 <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
                          <div className='eye' onClick={togglebtn}>
