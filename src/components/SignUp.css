@@ -101,13 +101,13 @@ span{
     gap: 20px;
     margin-top: 62px;
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 414px) {
     
     .main-c{
-        width: 440px;
-        margin-left: 20px;
-        margin-right: 5px; 
+        width: 378px;
+        margin: 0 16px 0;
     }
+    
     .footer-signup{
         align-items: center;
     align-items: center;

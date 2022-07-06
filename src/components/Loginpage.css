@@ -94,7 +94,8 @@ body{
         background-image: none;
     }
     .container{
-        width: 352px;
+        width: 400px;
+        margin: 0 16px 0;
     }
     .psac input{
         width: 40px;

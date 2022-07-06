@@ -197,6 +197,9 @@
     cursor: pointer;
     height: 18px;
 }
+.login-logo-right img{
+    display: none;
+}
 
 button{
     width: 100%;
@@ -234,22 +237,45 @@ button{
 
 
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 414px) {
     body{
         background-image: none;
     }
-    .login-container{
-        width: 449px;
-        margin: 90px 16px 0;
+    .containerr{
+        width: 384px;
+    margin: 90px 16px 0;
+    padding: 25px;
+    }
+    .containerr h2{
+        margin-bottom: 40px;
     }
     .left-section{
       display: none;
     }
     .right-section{
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
     .back{
         display: none;
+    }
+    .login-logo-right img{
+        display: inline;
+        width: 142px;
+        height: auto;
+       position: relative;
+       right:122px;
+       top: 80px;
+        margin-bottom: 18px;
+    }
+    .eyepassword{
+        position: relative;
+    }
+    .eye{
+        position: absolute;
+        left: 296px;
+        top: 15px;
     }
   
         

@@ -68,6 +68,9 @@ const togglebtn =()=>{
 
 
         <div class="right-section">
+        <div class="login-logo-right">
+                <img src={logo}/>
+            </div>
 	        <div class="containerr">
 	            <h2>Create your Merchant account</h2>
 	            <div class="form-section">
@@ -77,7 +80,7 @@ const togglebtn =()=>{
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
-                    
+
                     <div className='eyepassword'>
 		                 <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
                          <div className='eye' onClick={togglebtn}>
