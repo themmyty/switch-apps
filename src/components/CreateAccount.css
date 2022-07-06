@@ -10,12 +10,12 @@
     flex-direction: column;
 }
 .back{
-   float: initial;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    margin-top: 40px;
-    margin-left: 50px;
+   display: flex;
+   align-items: center;
+   position: relative;
+   top: 35px;
+   left: 85px;
+    
 }
 .itemstyle{
     font-size: 15px;
