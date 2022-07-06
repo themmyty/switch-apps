@@ -27,7 +27,7 @@
 .login-container{
     display: flex;
     margin: auto;  
-    align-content: center;
+   margin-top: 50px;
 }
 
 .login-logo img{
