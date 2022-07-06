@@ -11,6 +11,7 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat; 
     height: 100vh;
+    background-attachment: fixed;
     font-family: 'Catamaran', sans-serif !important;
 }
 .main{

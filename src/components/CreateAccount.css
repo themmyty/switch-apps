@@ -6,13 +6,7 @@
     font-family: 'Catamaran', sans-serif !important;
 }
 
-body{
-    background-image: url(../assets/images/switchImg.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat; 
-    height: 100vh;
-    font-family: 'Catamaran', sans-serif !important;
-}
+
 .body-container{
     display: flex;
     flex-direction: column;
