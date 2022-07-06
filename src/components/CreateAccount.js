@@ -5,7 +5,6 @@ import {AiFillEyeInvisible,AiFillEye,} from 'react-icons/ai'
 import{IoMdArrowDropdown} from 'react-icons/io'
 import logo from '../assets/images/Switchlogo.png'
 import icon from '../assets/images/icon.png'
-import nig from '../assets/images/nig.png'
 import back from '../assets/images/bak.png'
 
 
@@ -19,33 +18,6 @@ const [state,setstate]=useState(false);
 const togglebtn =()=>{
     setstate(prevstate =>!prevstate);
 }
-//dropdown
- const[dropdownvisible,setdropdownvisible]=useState(false);
-
- const[itemlist,setitemlist]=useState([
-    {
-        imgg:require('../assets/images/nig.png'),
-        dname:"Nigeria",
-        value:" Nigeria",   
-       
-    },
-    {
-    dname:"United state",
-    value:"United state",
-    imgg:require('../assets/images/usa.jpeg')
-},
-{
-    dname:"Canada",
-    value:"canada",
-    imgg:require('../assets/images/cnanda.jpeg')
-},
-{
-    dname:"Algeria",
-    value:"Algeria",
-    imgg:require('../assets/images/algeria.png')
-}
- ])
- const[selecteditem, setselecteditem]=useState(null)
 
     return (
         
@@ -105,38 +77,7 @@ const togglebtn =()=>{
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
-                    <div className='selection'onClick={e=>{
-                            setdropdownvisible(!dropdownvisible)
-                         }}>
-                                <div className='uion'>
-                                {selecteditem !== null ? itemlist[selecteditem ].dname:" Select Country"}
-                                </div>
-                                <IoMdArrowDropdown style={{position:'absolute',right:15,top:10,}}/>
-                              
-                         </div>
-                        
-                        
-                            {dropdownvisible ? (
-                             <div className='item-holder'>
-                                {
-                                    itemlist.map((item,index)=>(
-                                    <div key={item.value} className='dropdown-item' onClick={e=>{
-                                        setselecteditem(index);
-                                        setdropdownvisible(false);
-                                    }}>
-                                        <div className='display'>
-                                            <img src={item.imgg} style={{width:20,height:'auto',marginRight:40}}/>
-                                             <div className='itemstyle'>
-                                                 {item.dname}  
-                                             </div>
-                                        </div>     
-                                    </div>
-                                 )) 
-                              }
-                             </div>
-                            ):<></>
-                            }
-                   
+                    
                     <div className='eyepassword'>
 		                 <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>
                          <div className='eye' onClick={togglebtn}>
