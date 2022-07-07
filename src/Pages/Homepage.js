@@ -9,7 +9,7 @@ function Homepage(props) {
     return (
         <div className='Homepage-container'>
             
-           
+           <h6>HI</h6>
         </div>
     );
 }
