@@ -81,8 +81,9 @@ const togglebtn =()=>{
 		            </div>
                     <input type="email" id="email" name="email" placeholder="Email"required=""/>
 		            <input type="text" id="cname" name="cname" placeholder="Company Name" required=""/>
-                    <div>
-                       
+                    <div className='drop-c'>
+                             <CountryDropdown  id="UNIQUE_ID" className='country-select' preferredCountries={['gb', 'us']}  value="" handleChange={e => console.log(e.target.value)}>
+                             </CountryDropdown>  
                     </div>
                     <div className='eyepassword'>
 		                 <input type={state ? "text" : "password"} id="password" name="password" placeholder="Password"maxlength="10" minlength="2" required="!@#$%"/>

@@ -125,6 +125,15 @@
     font-size: 14px;
     
 }
+.country-select {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 45px;
+    border-radius: 7px;
+}
+
 @keyframes slideup{
     from{
         margin-top: 100px;
