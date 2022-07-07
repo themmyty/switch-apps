@@ -117,4 +117,8 @@ span{
     .signup-container img{
         margin-left: 14px;
     }
+    .signup-container{
+        width: 384px;
+    }
+
 }
